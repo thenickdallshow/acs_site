@@ -1,0 +1,429 @@
+/*core styles*/
+
+body{
+	margin:0;
+	padding:0;
+	font-family:'Poppins', sans-serif;
+	font-weight:100;
+	text-decoration:none;
+}
+
+h1,h2,h3,h4{
+	font-family:'Poppins', sans-serif;
+	font-weight:400;
+	margin:0;
+	padding:0;
+}
+
+h1{
+	font-size:1.5em;
+}
+
+p{
+	margin:0;
+	padding:0;
+	font-weight:100;
+}
+
+a{
+	text-decoration: none;
+	color:white;
+}
+
+ul{
+	list-style-type:circle;
+}
+
+li{
+	line-height:1em;
+	margin:1.5em 0;
+
+}
+
+.nav{
+	height:75px;
+	text-align:left;
+	display:grid;
+	grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	background:#20112f;
+	text-align:center;
+	position: -webkit-sticky;
+	position:sticky;
+	top:0;
+	z-index:1;
+}
+
+.nav a{
+	padding-top:3em;
+	font-size:.65em;
+}
+
+.nav img{
+	height:45px;
+	width:auto;
+	padding-top:.5em;
+}
+
+.navLogo{
+	background:white;
+	margin:0;
+	text-align:center;
+}
+
+.ACS{
+	font-weight:300;
+	color:#20112f;
+}
+
+.container{
+	margin-left:3em;
+	margin-right:3em;
+	padding-top:2.5em;
+	padding-bottom:2.5em;
+}
+
+.divIntro{
+	color:#C9C96A;
+	margin:2em 0;
+}
+
+.divSub{
+	border-bottom:1px dotted #2a2c35;
+	margin-bottom:1em;
+}
+
+.longDesc{
+	margin-bottom:5em;
+}
+
+.card{
+	border-bottom:1px dotted #363046;
+	margin-bottom:2em;
+	margin-top:3em;
+	text-align:center;
+}
+
+.cardTitle{
+	margin-top:1.5em;
+	text-align:center;
+	font-weight:400;
+}
+
+.cardInfo{
+	margin-top:1em;
+	margin-bottom:3em;
+	text-align:left;
+}
+
+.cardImg{
+	border-radius:50%;
+}
+
+.btnDiv{
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	width:100%;
+}
+
+button{
+	background:#C9C96A;
+	width:100%;
+	height:auto;
+	color:white;
+	font-size:1em;
+	border:none;
+	border-radius:6px;
+	box-shadow:0px 2px 5px #20112f;
+	height:4em;
+	width:20em;
+}
+
+.menu{
+	border-bottom:2px solid #C9C96A;
+}
+
+.centerIntro{
+	margin-left:3em;
+	margin-right:3em;
+	padding-top:2.5em;
+}
+
+.servicesLogoDiv{
+	text-align:center;
+}
+
+.servicesLogo{
+	height:300px;
+	width:auto;
+	padding-top:3em;
+}
+
+
+
+.footer{
+	background:#ededed;
+	height:75px;
+	width:100%;
+	font-size:.75em;
+	text-align:center;
+	padding:1.5em 0;
+}
+
+.footer img{
+	height:45px;
+	width:auto;
+}
+
+
+
+/*id's*/
+
+	/*banner div*/
+
+	#mainImg{
+		background:url('images/map.jpg');
+		position:absolute;
+		background-position:center;
+		background-repeat:no-repeat;
+		background-size:cover;
+		width:100%;
+		height:900px;
+		z-index:-2;
+		opacity:.75;
+	}
+
+	#mainSkin{
+		background:#363046;
+		position:absolute;
+		background-position:center;
+		background-repeat:no-repeat;
+		background-size:cover;
+		width:100%;
+		height:900px;
+		z-index:-1;
+		opacity:.5;
+	}
+
+	#mainDiv{
+		position:relative;
+		width:100%;
+		height:900px;
+		text-align:center;
+		color:white;
+		font-size:1.5em;
+		font-weight:100;
+	}
+
+	#mainP{
+		padding-top:5em;
+		padding-left:2em;
+		padding-right:2em;
+		padding-bottom:3em;
+		animation-name:newFadeIn;
+		animation-duration:3s;
+		animation-delay:1s;
+		animation-fill-mode:forwards;
+		opacity:0;
+	}
+
+
+
+	/*solutions section*/
+
+	#solutions{
+		background:#20112f;
+		color:white;
+	}
+
+	#solutions .containerSub{
+		margin-top:5em;
+		margin-bottom:1.5em;
+	}
+
+	#solutions .card{
+		background:#363046;
+		padding:1em;
+	}
+
+
+
+	/*contact section*/
+
+	#contactImg{
+		background:url('images/night.jpg');
+		height:500px;
+		width:100%;
+		position:absolute;
+		background-position:center;
+		background-repeat:no-repeat;
+		background-size:cover;
+		z-index:-2;
+		opacity:.6;
+	}
+
+	#contactSkin{
+		background:#363046;
+		height:500px;
+		width:100%;
+		position:absolute;
+		background-position:center;
+		background-repeat:no-repeat;
+		background-size:cover;
+		z-index:-2;
+		opacity:.6;
+	}
+
+	#contactSection{
+		height:500px;
+		width:100%;
+		color:white;
+		text-align:center;
+	}
+
+	#contactSection .cardTitle{
+		margin-top:2em;
+		font-size:3em;
+	}
+
+	#contactSection .menu{
+		font-size:1.75em;
+	}
+
+
+	/*team section*/
+
+	#team .teamCard{
+		font-family:'Poppins', sans-serif;
+		text-align:center;
+	}
+
+	
+	/*team page*/
+
+	#teamPageLogo{
+		text-align:center;
+	}
+
+	#teamPageLogo img{
+		height:250px;
+		width:auto;
+	}
+
+	#teamContainer{
+		margin:0 4em;
+	}
+
+	#teamContainer .cardTitle, .cardInfo{
+		margin-top:1em;
+		margin-bottom:none;
+		padding-bottom:none;
+	}
+
+	.cardInfoLeft{
+		text-align:left;
+	}
+
+	.longBio{
+		font-size:.6em;
+		text-align:justify;
+		padding-top:1.5em;
+	}
+
+	.bioP{
+		margin-top:1.25em;
+	}
+
+	.spaceTop{
+		margin-top:5em;
+	}
+
+
+
+	/*solutions page*/
+	.solutionsGrid{
+		font-size:.75em;
+		padding-left:2em;
+		padding-right:2em;
+		margin-top:3em;
+	}
+
+	#economicDevelopment, #developmentAdvocacy{
+		padding:5em 3em;
+		background:#20112f;
+		color:white;
+	}
+
+
+	/*contact page*/
+	.contactDiv p{
+		padding-bottom:3em;
+	}
+
+	.contactDiv .divSub{
+		border-bottom:none;
+	}
+
+
+
+/*animations*/
+
+@keyframes newFadeIn{
+	0%{opacity:0;}
+	100%{opacity:1;}
+}
+
+
+
+@media(min-width:700px){
+	body{
+		font-size:1.75em;
+		font-weight:100;
+	}
+
+	.nav a{
+		padding-top:1.2em;
+	}
+
+	.nav a:hover{
+		border-bottom:3px solid #C9C96A;
+	}
+
+	#mainP{
+		padding:3em;
+	}
+
+	.gridTwo{
+		display:grid;
+		grid-template-columns:1fr 1fr;
+		grid-column-gap:2em;
+		grid-row-gap:2em;
+	}
+
+	.card{
+		padding:.5em;
+		text-align:left;
+		border-bottom:none;
+		transition-property:opacity;
+		transition-duration:1s;
+		animation-fill-mode:forwards;
+	}
+
+	.servicesLogo{
+	height:500px;
+	width:auto;
+	}
+
+	.solutionsGrid{
+		display:grid;
+		grid-template-columns:1fr 1fr;
+		grid-column-gap:1em;
+		grid-row-gap:1em;
+	}
+
+	.footer{
+		display:grid;
+		grid-template-columns:1fr 1fr;
+	}
+
+}
